@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { BasicCreationsComponent } from './basic-creations/basic-creations.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { BasicCreationsComponent } from './basic-creations/basic-creations.compo
     BrowserModule,
     BrowserAnimationsModule,
     MatRadioModule,
-    FormsModule 
+    FormsModule,
+    MatButtonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

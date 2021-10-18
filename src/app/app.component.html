@@ -1,10 +1,15 @@
 <div fxLayout="row" fxLayoutAling="space-around center" fxFill>
  <div fxFlex="20">
-   <mat-radio-group [(ngModel)]="option" >
-
+   <mat-radio-group [(ngModel)]="option" fxLayout="column" fxLayoutAling="center start">
+      <mat-radio-button value="basic-creations">Basic Creation</mat-radio-button>
    </mat-radio-group>
+
+
  </div>
- <div fxFlex="70">
+ <div fxFlex="70" fxLayout="column" fxLayoutAling="center start">
+   <ng-container [ngSwitch]="option" >
+    <app-basic-creations *ngSwitchCase="'basic-creations'" fxFill></app-basic-creations>
+   </ng-container>
 
  </div>
 </div>
